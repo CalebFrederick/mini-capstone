@@ -1,0 +1,29 @@
+### Show Product
+
+GET http://localhost:3000/products/1.json
+
+### Show_All Products
+
+GET http://localhost:3000/all_products.json
+
+### Create Product
+POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+    "name": "test product", 
+    "price": "01",
+    "image_url": "url",
+    "description": "product desciption entered here"
+}
+
+### Update Product
+PATCH http://localhost:3000/products/1.json
+Content-Type: application/json
+
+{
+    "description": "new description"
+}
+
+### Destroy Product
+DELETE http:localhost:3000/products/1.json
